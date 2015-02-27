@@ -49,7 +49,7 @@ server {
 		proxy_buffers 32 256k;
 		proxy_busy_buffers_size 512k;
 		proxy_temp_file_write_size 256k;
-	}
+	}
 }
 
 {{ range $host, $containers := groupByMulti $ "Env.VIRTUAL_HOST" "," }}
