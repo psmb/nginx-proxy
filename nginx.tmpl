@@ -40,7 +40,7 @@ server {
 		proxy_set_header Host $host;
 		proxy_set_header X-Real-IP $remote_addr;
 		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-		client_max_body_size 8m;
+		client_max_body_size 800m;
 		client_body_buffer_size 256k;
 		proxy_connect_timeout 60;
 		proxy_send_timeout 60;
